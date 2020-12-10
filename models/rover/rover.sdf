@@ -181,7 +181,7 @@
     </link>
 
     <link name="front_left_wheel">
-      <pose>0.76 -1.41 0.3 0 0 0</pose>
+      <pose>0.8 -1.41 0.3 0 0 0</pose>
       <inertial>
         <mass>11</mass>
         <inertia>
@@ -215,7 +215,7 @@
             <radius>0.31265</radius>
           </sphere> -->
           <cylinder>
-            <radius>0.3175</radius>
+            <radius>0.31</radius>
             <length>0.2794</length>
           </cylinder>
         </geometry>
@@ -240,7 +240,7 @@
     </link>
 
     <link name="front_right_wheel">
-      <pose>-0.76 -1.41 0.3 0 0 0</pose>
+      <pose>-0.8 -1.41 0.3 0 0 0</pose>
       <inertial>
         <mass>11</mass>
         <inertia>
@@ -271,7 +271,7 @@
         <pose>0.0 0.0 0.0 0 1.5707963267948966 0</pose>
         <geometry>
           <cylinder>
-            <radius>0.3175</radius>
+            <radius>0.31</radius>
             <length>0.2794</length>
           </cylinder>
           <!-- <sphere>
@@ -693,7 +693,7 @@
             <cmdMin>-80</cmdMin>
           </joint_control_pid>
         </channel>
-        <channel name="wheel_steering">
+        <!-- <channel name="wheel_steering">
           <input_index>1</input_index>
           <input_offset>0</input_offset>
           <input_scaling>-0.9</input_scaling>
@@ -701,7 +701,6 @@
           <zero_position_armed>0</zero_position_armed>
           <joint_control_type>position</joint_control_type>
           <joint_name>steering_joint</joint_name>
-          <!-- <joint_name>front_right_combined_joint</joint_name> -->
           <joint_control_pid>
             <p>80</p>
             <i>40</i>
@@ -711,7 +710,7 @@
             <cmdMax>80</cmdMax>
             <cmdMin>-80</cmdMin>
           </joint_control_pid>
-        </channel>
+        </channel> -->
       </control_channels>
     </plugin>
     <static>0</static>
